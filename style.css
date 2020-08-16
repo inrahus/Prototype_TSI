@@ -455,6 +455,8 @@ button {
 
     background-image: url(./Media/IMG-1-Pat-Whelen.jpg);
     background-position: cover;
+
+    overflow: hidden;
    }
 
 /*Footer*/
