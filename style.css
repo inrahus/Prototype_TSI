@@ -12,6 +12,8 @@ html{
 
 body {
     background-color: rgb(22, 22, 54);
+
+    overflow-x: hidden;
 }
 
 ul{
@@ -29,7 +31,7 @@ a{
 
 video{
     position: relative;
-    width:100%;     
+    width:100vw;     
     height: auto;
 
     z-index: -1;
@@ -62,7 +64,7 @@ nav ul{
 }
 
 .nav-link{
-    margin: 30px;
+    margin: 2vw;
 
     color: white;
     font-size: 1rem;
@@ -74,7 +76,7 @@ nav ul{
 .nav-link::after{
     content:'';
 
-    width: 0%;
+    width: 0vw;
     height: 0.25rem;
     margin-bottom: -1vh;
 
@@ -88,7 +90,6 @@ nav ul{
     transition: all 0.5s ease;
 
 }
-
 .nav-link:hover::after{
     left: 0%;
     width: 100%;
@@ -111,8 +112,8 @@ nav ul{
 /*Intro*/
 
 .intro{
-    width: 100%;
-    height: 95%;
+    width: 100vw;
+    height: 95vh;
 }
 
 .text-container{
@@ -120,6 +121,8 @@ nav ul{
     left: 35%;
     top: 45%;
     transform: translate(-35%, -45%);
+
+    width: 85%;
 }
 
 .text-container p{
@@ -161,8 +164,8 @@ nav ul{
 .arrows span {
     display: block;
 
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.5vw;
+    height: 3vh;
 
     margin: -0.8rem;
 
@@ -207,8 +210,8 @@ nav ul{
 /*Vision Box*/
 
 .vision-container{
-    width: 85%;
-    height: 25rem;
+    width: 85vw;
+    height: 60vh;
 
     background-color: rgb(15, 15, 36);
 
@@ -217,7 +220,7 @@ nav ul{
     box-shadow: 0.125rem 0.125rem 0.8rem rgba(0, 0, 0, 0.75);
 
     display: flex;
-    margin: -10% auto 1.15rem auto;
+    margin: -5vh auto 1.15rem auto;
 
     justify-content: space-evenly;
 
@@ -225,13 +228,13 @@ nav ul{
 }
 
 .vision-container img{
-    height: 10rem;
+    height: 25vh;
 
     border-radius: 1rem;
 }
 
 .vision-text{
-    width: 35rem;
+    width: 35vw;
     color: whitesmoke;
     line-height: 1.5rem;
 }
@@ -286,8 +289,8 @@ button {
        display: block;
        position: absolute;
        background: rgba(255,255,255,.5);
-       width: 4rem;
-       height: 100%;
+       width: 4vw;
+       height: 100vh;
        left: 0;
        top: 0;
        opacity: .5;
@@ -300,8 +303,8 @@ button {
        display: block;
        position: absolute;
        background: rgba(255,255,255,.2);
-       width: 30px;
-       height: 100%;
+       width: 2vw;
+       height: 100vh;
        left: 30px;
        top: 0;
        opacity: 0;
@@ -334,7 +337,7 @@ button {
    /*Homepage Services Section*/
 
    .home-services{
-       height: 40rem;
+       height: 87.5vh;
        padding: 5% 10% 0px 10%;
 
        text-align: center;
@@ -389,11 +392,11 @@ button {
    }
 
    .box-1, .box-2, .box-3{
-       height: 15rem;
-       width: 15rem;
+       height: 30vh;
+       width: 30vh;
 
        background-repeat: no-repeat;
-       background-size: 5rem 5rem;
+       background-size: 15vh 15vh;
        background-color: rgb(255, 255, 255);
        background-position:center;
 
@@ -403,7 +406,7 @@ button {
 
        transition: all 0.75s ease;
 
-       margin-left: 5vh;
+       margin: 5vh;
    }
 
    .box-1{
@@ -420,13 +423,16 @@ button {
 
    .box-1 p, .box-2 p, .box-3 p {
        text-align: center;
-       line-height: 15rem;
+       
+       line-height: 5rem;
        font-size: 1.75rem;
        font-weight: bold;
 
        color: whitesmoke;
 
        opacity: 0;
+
+       padding-top: 4rem;
    }
 
    .box-1:hover, .box-2:hover, .box-3:hover{
@@ -442,9 +448,178 @@ button {
    }
 
    .contact-us{
-    height: 50rem;
+    height: 95vh;
 
     background-image: url(./Media/IMG-1-Pat-Whelen.jpg);
     background-position: cover;
    }
+
+/*Footer*/
+
+
+
+.footer-distributed{
+	background-color: rgb(15,15,36);
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+    padding: 55px 50px;
+}
+ 
+.footer-distributed .left-foot,
+.footer-distributed .centre-foot,
+.footer-distributed .right-foot{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .left-foot{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+    margin: 0;
+    
+    font-family: 'Lalezar', cursive;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+    margin: 0;
+    
+    font-family: 'Lalezar', cursive;
+}
+ 
+ 
+.footer-distributed .centre-foot{
+	width: 35%;
+}
+ 
+.footer-distributed .centre-foot i{
+	background-color: rgb(30, 31, 73);
+	color: #ffffff;
+	font-size: 1.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .centre-foot i.fa-envelope{
+	font-size: 1rem;
+	line-height: 2.05rem
+}
+ 
+.footer-distributed .centre-foot p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .centre-foot p span{
+	display:block;
+	font-weight: normal;
+	font-size:1rem;
+	line-height:2;
+}
+ 
+.footer-distributed .centre-foot p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .right-foot{
+	width: 20%;
+}
+ 
+.footer-distributed .company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 1rem;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 5vh;
+}
+ 
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    text-align: center;
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+	background-color:  rgb(30, 31, 73);
+	border-radius: 1rem;
+ 
+	font-size: 1.5rem;
+	color: #ffffff;
+	text-align: center;
+ 
+	margin-right: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+.footer-icons a:hover, .footer-links a:hover, fa fa-envelope a:hover {
+    color: rgb(228, 34, 41);
+}
+
+/*Responsiveness*/
+
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+        font-weight: bold;
+        font-size: 1rem;
+        
+	}
+ 
+	.footer-distributed .left-foot,
+	.footer-distributed .centre-foot,
+	.footer-distributed .left-foot{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .centre-foot i{
+		margin-left: 0;
+	}
+}
+ 
 
